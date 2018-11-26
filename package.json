@@ -1,0 +1,43 @@
+{
+  "name": "loopback-example-acl",
+  "version": "0.0.0-placeholder",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "dev": "nodemon",
+    "posttest": "npm run lint && nsp check",
+    "sdk": "lb-sdk server/server.js ./dist  -i disabled -w"
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "dotenv": "6.1.0",
+    "helmet": "^3.10.0",
+    "http-errors": "1.7.1",
+    "lodash": "4.17.11",
+    "loopback": "^3.19.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.0.0",
+    "loopback-component-model-extender": "0.2.0",
+    "loopback-connector-mysql": "^2.4.1",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^2.0.0"
+  },
+  "devDependencies": {
+    "@mean-expert/loopback-sdk-builder": "2.3.1",
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "nodemon": "^1.18.5",
+    "nsp": "^2.1.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "MIT",
+  "description": "loopback-example-acl"
+}

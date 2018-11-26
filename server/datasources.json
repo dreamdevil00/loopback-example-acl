@@ -1,0 +1,10 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "devMySql": {
+    "name": "devMySql",
+    "connector": "memory"
+  }
+}
